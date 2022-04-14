@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-04-09T14:14:26.404Z",
+    "end": "2022-04-09T14:14:34.627Z",
+    "duration": 8223,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "53497e25-09e0-4d7c-abc1-f55bf02b7a6b",
+      "title": "",
+      "fullFile": "cypress/integration/testcases/LoginAdminTest.spec.js",
+      "file": "cypress/integration/testcases/LoginAdminTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "28286066-6bae-46f4-a610-f815425241de",
+          "title": "Login As SSO Admin",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate Title of the Page",
+              "fullTitle": "Login As SSO Admin Validate Title of the Page",
+              "timedOut": null,
+              "duration": 6456,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.validateTitle().should('eq', 'Pegasus Gateway Login - Pegasus Gateway');",
+              "err": {},
+              "uuid": "012bf32a-2ba9-4484-a80b-45aa16247b0e",
+              "parentUUID": "28286066-6bae-46f4-a610-f815425241de",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify enter email address",
+              "fullTitle": "Login As SSO Admin Verify enter email address",
+              "timedOut": null,
+              "duration": 664,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterEmailAdd();",
+              "err": {},
+              "uuid": "e8b5c0c6-991b-429e-a44d-983054504a64",
+              "parentUUID": "28286066-6bae-46f4-a610-f815425241de",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify tap Continue button",
+              "fullTitle": "Login As SSO Admin Verify tap Continue button",
+              "timedOut": null,
+              "duration": 246,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.tapContinueBtn();",
+              "err": {},
+              "uuid": "42267370-9b8d-47f1-90f0-237aa4295008",
+              "parentUUID": "28286066-6bae-46f4-a610-f815425241de",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify enter password",
+              "fullTitle": "Login As SSO Admin Verify enter password",
+              "timedOut": null,
+              "duration": 439,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterPassword();",
+              "err": {},
+              "uuid": "04d094a9-a309-4280-90ba-4632faf9c452",
+              "parentUUID": "28286066-6bae-46f4-a610-f815425241de",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify tap Sign In button",
+              "fullTitle": "Login As SSO Admin Verify tap Sign In button",
+              "timedOut": null,
+              "duration": 168,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.tapSignInBtn(); //cy.wait(10000) -- running in headless homepage did not load",
+              "err": {},
+              "uuid": "559e93bd-4fae-4af7-a4c9-06d0af57de90",
+              "parentUUID": "28286066-6bae-46f4-a610-f815425241de",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "012bf32a-2ba9-4484-a80b-45aa16247b0e",
+            "e8b5c0c6-991b-429e-a44d-983054504a64",
+            "42267370-9b8d-47f1-90f0-237aa4295008",
+            "04d094a9-a309-4280-90ba-4632faf9c452",
+            "559e93bd-4fae-4af7-a4c9-06d0af57de90"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7973,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "testresults",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "testresults",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

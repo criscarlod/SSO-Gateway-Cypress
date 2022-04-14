@@ -1,0 +1,188 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 4,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-04-09T13:21:36.526Z",
+    "end": "2022-04-09T13:21:56.908Z",
+    "duration": 20382,
+    "testsRegistered": 5,
+    "passPercent": 80,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a4681e39-3db3-46e6-9cc6-e06818f68151",
+      "title": "",
+      "fullFile": "cypress/integration/testcases/LoginAdminTest.spec.js",
+      "file": "cypress/integration/testcases/LoginAdminTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6668a5a0-8b89-4aa4-a6ca-cf21fb2b7c84",
+          "title": "Login As SSO Admin",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate Title of the Page",
+              "fullTitle": "Login As SSO Admin Validate Title of the Page",
+              "timedOut": null,
+              "duration": 7949,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.validateTitle().should('eq', 'Pegasus Gateway Login - Pegasus Gateway');",
+              "err": {},
+              "uuid": "f4a5e73f-5e58-4997-b342-9fcc758f4c9d",
+              "parentUUID": "6668a5a0-8b89-4aa4-a6ca-cf21fb2b7c84",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify enter email address",
+              "fullTitle": "Login As SSO Admin Verify enter email address",
+              "timedOut": null,
+              "duration": 943,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterEmailAdd();",
+              "err": {},
+              "uuid": "190315ee-82cb-4a5d-848e-717f113112db",
+              "parentUUID": "6668a5a0-8b89-4aa4-a6ca-cf21fb2b7c84",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify tap Continue button",
+              "fullTitle": "Login As SSO Admin Verify tap Continue button",
+              "timedOut": null,
+              "duration": 742,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.tapContinueBtn();",
+              "err": {},
+              "uuid": "3612e728-06de-4389-b80d-c46a9ffe5203",
+              "parentUUID": "6668a5a0-8b89-4aa4-a6ca-cf21fb2b7c84",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify enter password",
+              "fullTitle": "Login As SSO Admin Verify enter password",
+              "timedOut": null,
+              "duration": 4953,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterPassword();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4000ms: `cy.type()` failed because this element is not visible:\n\n`<input class=\"form-input required\" type=\"password\" id=\"password\" size=\"25\" pattern=\"\\S.*\\S\" placeholder=\"Password\" title=\"Password cannot contain spaces\" tabindex=\"2\" accesskey=\"p\" autocomplete=\"off\" name=\"password\" value=\"\">`\n\nThis element `<input#password.form-input.required>` is not visible because its parent `<form#loginForm>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4000ms: `cy.type()` failed because this element is not visible:\n\n`<input class=\"form-input required\" type=\"password\" id=\"password\" size=\"25\" pattern=\"\\S.*\\S\" placeholder=\"Password\" title=\"Password cannot contain spaces\" tabindex=\"2\" accesskey=\"p\" autocomplete=\"off\" name=\"password\" value=\"\">`\n\nThis element `<input#password.form-input.required>` is not visible because its parent `<form#loginForm>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at runVisibilityCheck (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:163892:76)\n    at $Cy.ensureStrictVisibility (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:163908:12)\n    at runAllChecks (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:150566:14)\n    at retryActionability (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:150621:16)\n    at tryCatcher (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:13022:23)\n    at Function.Promise.attempt.Promise.try (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:10296:29)\n    at whenStable (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:168785:63)\n    at https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:168282:14\n    at tryCatcher (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:11139:18)\n    at Promise._fulfill (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:11083:18)\n    at https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    at LoginPageActions.enterPassword (https://qa.onsitetrackeasy.com.au/__cypress/tests?p=cypress\\integration\\testcases\\LoginAdminTest.spec.js:188:39)\n    at Context.eval (https://qa.onsitetrackeasy.com.au/__cypress/tests?p=cypress\\integration\\testcases\\LoginAdminTest.spec.js:137:15)",
+                "diff": null
+              },
+              "uuid": "e7d17fc8-4990-4fef-ad5c-98bc226199e0",
+              "parentUUID": "6668a5a0-8b89-4aa4-a6ca-cf21fb2b7c84",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify tap Sign In button",
+              "fullTitle": "Login As SSO Admin Verify tap Sign In button",
+              "timedOut": null,
+              "duration": 5150,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.tapSignInBtn();",
+              "err": {},
+              "uuid": "4a7a8fc3-3a17-4a95-a489-1c3cb0251eba",
+              "parentUUID": "6668a5a0-8b89-4aa4-a6ca-cf21fb2b7c84",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f4a5e73f-5e58-4997-b342-9fcc758f4c9d",
+            "190315ee-82cb-4a5d-848e-717f113112db",
+            "3612e728-06de-4389-b80d-c46a9ffe5203",
+            "4a7a8fc3-3a17-4a95-a489-1c3cb0251eba"
+          ],
+          "failures": [
+            "e7d17fc8-4990-4fef-ad5c-98bc226199e0"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 19737,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "testresults",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "testresults",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

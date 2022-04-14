@@ -1,0 +1,12 @@
+{
+
+    "loginpage":{
+        "emailAddInputField": "#checkEmail",
+        "continueLoginBtn": "#continueButton",
+        "passwordInputField": "#password",
+        "signInLoginBtn": "#submitButton"
+    }
+
+
+
+}

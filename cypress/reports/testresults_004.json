@@ -1,0 +1,188 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 4,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-04-09T13:48:53.853Z",
+    "end": "2022-04-09T13:51:37.639Z",
+    "duration": 163786,
+    "testsRegistered": 5,
+    "passPercent": 80,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d710e3a4-53d9-4702-b195-bc26fc91eee5",
+      "title": "",
+      "fullFile": "cypress/integration/testcases/LoginAdminTest.spec.js",
+      "file": "cypress/integration/testcases/LoginAdminTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b5796e40-afde-449a-82cb-8d4363965ef3",
+          "title": "Login As SSO Admin",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate Title of the Page",
+              "fullTitle": "Login As SSO Admin Validate Title of the Page",
+              "timedOut": null,
+              "duration": 8187,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.validateTitle().should('eq', 'Pegasus Gateway Login - Pegasus Gateway');",
+              "err": {},
+              "uuid": "4e332e4b-b3ff-4c72-b7f1-de9c9d4b2cdb",
+              "parentUUID": "b5796e40-afde-449a-82cb-8d4363965ef3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify enter email address",
+              "fullTitle": "Login As SSO Admin Verify enter email address",
+              "timedOut": null,
+              "duration": 420,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterEmailAdd();",
+              "err": {},
+              "uuid": "cd9eed55-c664-48be-9790-e965bab88735",
+              "parentUUID": "b5796e40-afde-449a-82cb-8d4363965ef3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify tap Continue button",
+              "fullTitle": "Login As SSO Admin Verify tap Continue button",
+              "timedOut": null,
+              "duration": 161,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.tapContinueBtn();",
+              "err": {},
+              "uuid": "62da1fd9-5a6b-418c-9c8c-25b90c73dd69",
+              "parentUUID": "b5796e40-afde-449a-82cb-8d4363965ef3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify enter password",
+              "fullTitle": "Login As SSO Admin Verify enter password",
+              "timedOut": null,
+              "duration": 3757,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterPassword();",
+              "err": {},
+              "uuid": "d9d42470-e397-4b69-92ce-db54fa12bbce",
+              "parentUUID": "b5796e40-afde-449a-82cb-8d4363965ef3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify tap Sign In button",
+              "fullTitle": "Login As SSO Admin Verify tap Sign In button",
+              "timedOut": null,
+              "duration": 150938,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.tapSignInBtn();\ncy.wait(10000);",
+              "err": {
+                "message": "CypressError: Timed out after waiting `150000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `150000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `150000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `150000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:158301:72)\n    at https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:158621:16\n    at tryCatcher (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:13022:23)\n    at https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:8144:41\n    at tryCatcher (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://qa.onsitetrackeasy.com.au/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (https://qa.onsitetrackeasy.com.au/__cypress/tests?p=cypress\\integration\\testcases\\LoginAdminTest.spec.js:141:8)",
+                "diff": null
+              },
+              "uuid": "c8cca4ec-1587-4573-a4b3-eb7911ca2265",
+              "parentUUID": "b5796e40-afde-449a-82cb-8d4363965ef3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4e332e4b-b3ff-4c72-b7f1-de9c9d4b2cdb",
+            "cd9eed55-c664-48be-9790-e965bab88735",
+            "62da1fd9-5a6b-418c-9c8c-25b90c73dd69",
+            "d9d42470-e397-4b69-92ce-db54fa12bbce"
+          ],
+          "failures": [
+            "c8cca4ec-1587-4573-a4b3-eb7911ca2265"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 163463,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "testresults",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "testresults",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
